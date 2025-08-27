@@ -1,7 +1,12 @@
 import Model from '../models/_template.model';
 
-export const getAll = (req, res) => {
-    res.json({ message: 'Get all items' });
+export const getAll = async (req, res) => {
+    const items = await Model.find();
+
+    res.render('pages/home', {
+        title: 'Home',
+        items,
+    });
 };
 
 export const getById = (req, res) => {
