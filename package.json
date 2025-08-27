@@ -1,0 +1,20 @@
+{
+  "name": "rest-api-skeleton",
+  "version": "1.0.0",
+  "description": "Minimal REST API skeleton with Node.js, Express, and Mongoose",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-ejs-layouts": "^2.5.1",
+    "mongoose": "^8.18.0",
+    "morgan": "^1.10.1"
+  }
+}
